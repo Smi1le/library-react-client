@@ -4,12 +4,14 @@ import Dictionary from './components/Dictionary'
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import DictionaryItem from "./components/DictionaryItem";
+import Sidebar from "./components/Sidebar";
 
 class App extends Component {
     render() {
         return (
             <Router>
                 <div className="App">
+                    <Sidebar/>
                     <TodoList/>
                     {/*<Dictionary/>*/}
                     <Switch>
